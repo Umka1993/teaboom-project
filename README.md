@@ -1,64 +1,63 @@
-# Карточка товара — Ананасовый улун (Teaboom.ru)
+# Product Card — Pineapple Oolong (Teaboom.ru)
 
-Тестовое задание: вёрстка верхней части карточки товара интернет-магазина [Teaboom.ru](https://teaboom.ru/product/ananasovij-ulun).
+Test assignment: layout of the upper part of a product card for the [Teaboom.ru](https://teaboom.ru/product/ananasovij-ulun) online store.
 
-## Что сделано
+## What's included
 
-- изображение, название, категория, фасовки, артикул, цены, кнопка «В корзину», краткое описание;
-- переключение фасовки меняет цену, старую цену, артикул и активное состояние;
-- кнопка «В корзину» с hover-состоянием (без реальной корзины);
-- адаптив под desktop (1440px), tablet (768px), mobile (375px);
+- product image, title, category, packaging options, SKU, prices, “Add to cart” button, short description;
+- switching packaging updates the price, old price, SKU, and selected state;
+- “Add to cart” button with a hover state (no real cart);
+- responsive layout for desktop (1440px), tablet (768px), and mobile (375px);
 - HTML5, SCSS, vanilla JavaScript, Flexbox / Grid;
-- стилистика ориентирована на Teaboom.ru (Open Sans, жёлтый акцент `#f5d730`, кремовый фон).
+- visual style inspired by Teaboom.ru (Open Sans, yellow accent `#f5d730`, cream background).
 
-## Структура проекта
+## Project structure
 
 ```
 teaboom-project/
-├── index.html          # разметка страницы
-├── css/style.css       # скомпилированные стили
-├── scss/style.scss     # исходники стилей
-├── js/main.js          # логика выбора фасовки
-├── images/             # изображение товара
+├── index.html          # page markup
+├── css/style.css       # compiled styles
+├── scss/style.scss     # style source
+├── js/main.js          # packaging selection logic
+├── images/             # product image
 ├── package.json
 └── README.md
 ```
 
-## Запуск
+## Getting started
 
-### Быстрый способ
+### Quick start
 
-Откройте `index.html` в браузере или поднимите локальный сервер:
+Open `index.html` in a browser or start a local server:
 
 ```bash
 npx serve . -p 3000
 ```
 
-Страница: [http://localhost:3000](http://localhost:3000)
+Page: [http://localhost:3000](http://localhost:3000)
 
-### Пересборка CSS из SCSS
+### Rebuild CSS from SCSS
 
 ```bash
 npm install
 npm run build:css
 ```
 
-Режим наблюдения за изменениями:
+Watch mode:
 
 ```bash
 npm run watch:css
 ```
 
-## Фасовки
+## Packaging options
 
-| Фасовка | Артикул | Цена | Старая цена |
-|---------|---------|------|-------------|
-| 100 г   | 01306   | 326,40 ₽ | 349,20 ₽ |
-| 500 г   | 01307   | 1 432 ₽  | 1 646 ₽  |
-| 1000 г  | 01308   | 2 064 ₽  | 2 592 ₽  |
-| 5000 г  | 01309   | 6 320 ₽  | 8 710 ₽  |
+| Weight | SKU   | Price    | Old price |
+|--------|-------|----------|-----------|
+| 100 g  | 01306 | 326.40 ₽ | 349.20 ₽  |
+| 500 g  | 01307 | 1,432 ₽  | 1,646 ₽   |
+| 1000 g | 01308 | 2,064 ₽  | 2,592 ₽   |
+| 5000 g | 01309 | 6,320 ₽  | 8,710 ₽   |
 
-## Источник
+## Source
 
-Данные и изображение взяты с [teaboom.ru/product/ananasovij-ulun](https://teaboom.ru/product/ananasovij-ulun).
-# teaboom-project
+Product data and image are taken from [teaboom.ru/product/ananasovij-ulun](https://teaboom.ru/product/ananasovij-ulun).
